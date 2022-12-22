@@ -53,4 +53,15 @@ class Api {
       .then((data) => data)
       .catch((err) => console.log(err));
   }
+
+  update(id, completed) {
+    const JSONData = JSON.stringify(completed);
+    return fetch(`${this.url}/${id}`, {
+      method: "PATCH",
+      body: JSONData,
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+  }
 }

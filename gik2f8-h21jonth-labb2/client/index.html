@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Todo-applikation</title>
@@ -11,9 +12,8 @@
   <body>
     <main
       id="root"
-      class="pt-24 bg-gradient-to-br from-purple-500 to-yellow-400 min-h-screen"
-    >
-      <h1 class="text-center mb-10 text-7xl text-purple-900">Todo-lista</h1>
+      class="pt-24 bg-gradient-to-br from-green-300 to-cyan-500 min-h-screen">
+      <h1 class="text-center mb-10 text-6xl text-blue-500">Todo-lista</h1>
       <section
         class="flex gap-10 w-full xl:w-4/5 mx-2 xl:mx-auto bg-white bg-opacity-75 p-5 rounded-lg"
       >
@@ -29,7 +29,7 @@
                 type="text"
                 name="title"
                 id="title"
-                class="w-full rounded-mb border-yellow-500 border-2 focus-within:outline-none focus: border-yellow-600 px-4 py-2"
+                class="w-full rounded-xl border-2 focus-within:outline-none focus: border-cyan-300 px-4 py-2"
               />
             </section>
             <section class="mb-2">
@@ -44,7 +44,7 @@
                 rows="5"
                 name="description"
                 id="description"
-                class="resize-none w-full rounded-mb border-yellow-500 border-2 focus-within:outline-none focus: border-yellow-600 px-4 py-2"
+                class="resize-none w-full rounded-xl border-2 focus-within:outline-none focus: border-cyan-300 px-4 py-2"
               ></textarea>
             </section>
             <section class="mb-2">
@@ -58,12 +58,12 @@
                 type="date"
                 name="dueDate"
                 id="dueDate"
-                class="w-full rounded-mb border-yellow-500 border-2 focus-within:outline-none focus: border-yellow-600 px-4 py-2"
+                class="w-full rounded-xl border-2 focus-within:outline-none focus: border-cyan-300 px-4 py-2"
               />
             </section>
             <button
               name="submitToDoForm"
-              class="rounded-mb bg-yellow-500 hover:bg-yellow-400 px-4 py-1"
+              class="rounded-xl bg-cyan-300 hover:bg-cyan-400 px-7 py-1"
               type="submit"
             >
               Spara
